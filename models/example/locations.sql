@@ -1,0 +1,6 @@
+
+create view INTERVIEW_DB.PLAYGROUND_PADMA_DHAR.MAX_NEW_CASES  as (
+    SELECT date, new_cases AS New_Cases 
+FROM COVID_19_INDONESIA_DATA
+ORDER BY New_Cases DESC LIMIT 1
+  )
